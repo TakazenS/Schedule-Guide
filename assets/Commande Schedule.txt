@@ -1,0 +1,125 @@
+freecam : Toggles free cam mode.
+freecam
+
+save : Forces a save.
+save
+
+settime : Sets the time of day to the specified 24-hour time.
+settime 1530
+
+give : Gives the player the specified item. Optionally specify a quantity.
+give ogkush 5
+
+clearinventory : Clears the player's inventory.
+clearinventory
+
+changecash : Changes the player's cash balance by the specified amount.
+changecash 5000
+
+changebalance : Changes the player's online balance by the specified amount.
+changebalance 5000
+
+addxp : Adds the specified amount of experience points.
+addxp 100
+
+spawnvehicle : Spawns a vehicle at the player's location.
+spawnvehicle [vehicle name]
+
+setmovespeed : Sets the player's move speed multiplier.
+setmovespeed 1
+
+setjumpforce : Sets the player's jump force multiplier.
+setjumpforce 1
+
+teleport : Teleports the player to the specified location.
+teleport [location]
+
+setowned : Sets the specified property or business as owned.
+setowned [property/business]
+
+packageproduct : Packages the equipped product with the specified packaging.
+packageproduct [packaging]
+
+setstaminareserve : Sets the players stamia reserve (default 100) to the specified amount.
+setstaminareserve 200
+
+raisewanted : Raises the player's wanted level.
+raisewanted
+
+lowerwanted : Lowers the player's wanted level.
+lowerwanted
+
+clearwanted : Clears the player's wanted level.
+clearwanted
+
+sethealth : Sets the player's health to the specified amount.
+sethealth 100
+
+settimescale : Sets the time scale. Default 1.
+settimescale 1
+
+setvar : Sets the value of the specified variable.
+setvar <variable> <value>
+
+setqueststate : Sets the state of the specified quest entry.
+setqueststatec <quest name> <entry index>
+
+setquestentrystate : Sets the state of the specified quest entry.
+setquestentrystate <questname> <entry index> <state>
+
+setemotion : Sets the facial expression of the player's avatar.
+setemotion [emotion]
+
+setunlocked : Unlocks the given NPC.
+setunlocked <npc_id>
+
+setrelationship : Sets the relationship scalar of the given NPC. Range is 0 to 5.
+setrelationship <npc_id> 5
+
+addemployee : Adds an emoloyee of the specified type to the given property.
+addemployee [employee title] [property]
+
+setdiscovered : Sets the specified product as discovered
+setdiscovered [product]
+
+growplants : Sets ALL plants in the world fully grown.
+growplants
+
+setlawintensity : Sets the intensity of law enforcement activity on a scale of 0 to 10.
+setlawintensity 6
+
+setquality : Sets the quality of the currently equipped item.
+setquality [quality]
+
+bind : Binds the given key to the given command.
+bind <key> <command>
+
+unbind : Removes the given bind.
+unbind <key>
+
+clearbinds : Clear ALL binds.
+clearbinds
+
+hideui : Hides all on-screen UI.
+hideui
+
+disable : Disables the specified GameObject.
+disable <GameObject>
+
+enable : Enables the specified GameObject.
+enable <GameObject>
+
+endtutorial : Forces the tutorial to end immediately if the player is actually in the tutorial.
+endtutorial
+
+disablenpcasset : Disabled the given asset under all NPCs.
+disablenpcasset <asset>
+
+showfps : Shows FPS label on the top left.
+showfps
+
+hidefps : Hides FPS label.
+hidefps
+
+cleartrash : Instantly removes all trash from the world.
+cleartrash
