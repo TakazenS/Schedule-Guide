@@ -1,4 +1,131 @@
+/********** Fonts **********/
+
+@font-face {
+    font-family: 'DM_Sans';
+    src: url('./fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype'),
+         url('./fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'JetBrains_Mono';
+    src: url('./fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf') format('truetype'),
+         url('./fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
+         url('./fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+/********** Page **********/
+
 body {
     margin: 0;
-    display: flex;
+    font-family: 'DM_Sans', 'JetBrains_Mono', 'Montserrat';
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('./images/bg.png') center/cover no-repeat;
+    filter: brightness(0.2);
+    z-index: -1;
+}
+
+.commandGuide {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    z-index: 1;
+}
+
+/********** Header **********/
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 105px;
+    width: 100%;
+    background-color: #dee2de;
+}
+
+.header-img-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 18%;
+}
+
+.header-link-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22%;
+    width: 45px;
+    height: 45px;
+}
+
+.header-img {
+    width: 45px;
+    height: 45px;
+}
+
+.header-title {
+    margin-left: 20px;
+    display: block;
+    text-decoration: none;
+    color: #151515;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.container-navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 82%;
+}
+
+.navbar {
+    margin-right: 3%;
+    padding-left: 60%;
+    position: relative;
+    width: 100%;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header-nav-list {
+    display: block;
+    list-style: none;
+}
+
+.header-link-nav {
+    display: block;
+    text-decoration: none;
+    color: #151515;
+    font-weight: 600;
+    font-size: 1.18em;
+    transition: 0.25s ease-in-out;
+}
+
+.header-link-nav:hover {
+    text-decoration: underline;
+    transform: translateY(-4px);
+}
+
