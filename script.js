@@ -51,7 +51,7 @@ function toggleMenuMobile() {
     
     if (menuMobile.style.top === '80px') {
         menuMobile.style.transition = '0.25s ease-in-out';
-        menuMobile.style.top = '-80px';
+        menuMobile.style.top = '-150px';
         return 0;
     } else {
         menuMobile.style.transition = '0.25s ease-in-out';
