@@ -29,7 +29,7 @@ function checkScreenAndRemove() {
                                     <ul class="navigation">
                                         <li class="header-nav-list"><a class="header-link-nav" href="./index.html">Home</a></li>
                                         <li class="header-nav-list"><a class="header-link-nav" href="./docs/mixingPage/mixingGuide.html">Mixing Guide</a></li>
-                                        <li class="header-nav-list"><a class="header-link-nav" href="./docs/commandsPage/commandsGuide.html">Commands Guide</a></li>
+                                        <li class="header-nav-list"><a class="header-link-nav" href="./docs/commandPage/commandsGuide.html">Commands Guide</a></li>
                                     </ul>
                                 </nav>
                             </div>`;
