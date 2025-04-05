@@ -7,15 +7,22 @@ function checkScreenAndRemove() {
 
     if (mediaQuery765.matches) {
         headerImg.src = '../../images/extended-logo.png';
-        headerImg.style.width = '100px'
-        headerImg.style.height = '50px'
+        headerImg.style.width = '100px';
+        headerImg.style.height = '50px';
         imgLink.style.width = '100px';
-        imgLink.style.height = '50px'
+        imgLink.style.height = '50px';
         parent.innerHTML = `<div class="onlymobile-header" id="onlymobile-header">
                                 <div class="container-menu">
                                     <button class="hamburger-btn" id="hamburger"><img class="hamburger-img" src="../../images/hamburger.png" alt="hamburger"></button>
                                 </div>
                             </div>`;
+
+        const hamburger = document.getElementById('hamburger');
+        if (hamburger) {
+            hamburger.addEventListener('click', toggleMenuMobile);
+        }
+                    
+        return 1;
     }
     
     if (mediaQuery766.matches) {
@@ -33,6 +40,23 @@ function checkScreenAndRemove() {
                                     </ul>
                                 </nav>
                             </div>`;
+        return 1;
+    }
+
+    return 0;
+}
+
+function toggleMenuMobile() {
+    const menuMobile = document.getElementById('section-menu-mobile');
+    
+    if (menuMobile.style.top === '80px') {
+        menuMobile.style.transition = '0.25s ease-in-out';
+        menuMobile.style.top = '-80px';
+        return 0;
+    } else {
+        menuMobile.style.transition = '0.25s ease-in-out';
+        menuMobile.style.top = '80px';
+        return 1;
     }
 }
 
@@ -41,3 +65,5 @@ checkScreenAndRemove();
 
 // Vérifie aussi quand on redimensionne
 window.addEventListener("resize", checkScreenAndRemove);
+
+document.getElementById('hamburger').addEventListener('click', toggleMenuMobile);

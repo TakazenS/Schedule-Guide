@@ -47,13 +47,14 @@ body::before {
 /********** Header **********/
 
 .header {
-    position: fixed;
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: row;
     height: 105px;
     width: 100%;
     background-color: #dee2de;
+    box-shadow: none;
 }
 
 .header-menu-view {
@@ -142,10 +143,16 @@ body::before {
     transform: translateY(-4px);
 }
 
+.section-menu-mobile {
+    display: none;
+}
+
 @media (max-width: 765px) {
     .header {
+        position: relative;
         width: 100%;
         height: 80px;
+        box-shadow: 0px 0px 10px #151515;
     }
     
     .header-img-container {
@@ -171,16 +178,63 @@ body::before {
 
     .hamburger-btn {
         background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: none;
-        width: 50px;
-        height: 50px;
+        width: 54px;
+        height: 54px;
         cursor: pointer;
         margin-right: 38%;
     }
 
     .hamburger-img {
+        height: 50px;
+        width: 50px;
+        transition: 0.18s ease-in-out;
+    }
+
+    .hamburger-img:hover {
+        width: 100%;
+    }
+
+    .section-menu-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        height: 150px;
+        width: 100%;
+        background: #dee2de;
+        top: -80px;
+        z-index: -1;
+    }
+
+    .menu-mobile {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         height: 100%;
         width: 100%;
     }
+
+    .txt-menu-mobile {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: block;
+        color: #151515;
+        font-weight: 600;
+        font-size: 1.18em;
+        transition: 0.25s ease-in-out;
+    }
+    
+    .txt-menu-mobile:hover {
+        text-decoration: underline;
+        transform: translateY(-4px);
+    }
+
 }
+
 
