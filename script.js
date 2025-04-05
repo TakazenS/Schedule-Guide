@@ -13,7 +13,7 @@ function checkScreenAndRemove() {
         imgLink.style.height = '50px'
         parent.innerHTML = `<div class="onlymobile-header" id="onlymobile-header">
                                 <div class="container-menu">
-                                    <button class="hamburger-btn" id="hamburger"><img class="hamburger-img" src="../../images/hamburger.png" alt="hamburger"></button>
+                                    <button class="hamburger-btn" id="hamburger"><img class="hamburger-img" src="./images/hamburger.png" alt="hamburger"></button>
                                 </div>
                             </div>`;
     }
@@ -27,9 +27,9 @@ function checkScreenAndRemove() {
         parent.innerHTML = `<div class="container-navbar" id="container-navbar">
                                 <nav class="navbar">
                                     <ul class="navigation">
-                                        <li class="header-nav-list"><a class="header-link-nav" href="../../index.html">Home</a></li>
-                                        <li class="header-nav-list"><a class="header-link-nav" href="../mixingPage/mixingGuide.html">Mixing Guide</a></li>
-                                        <li class="header-nav-list"><a class="header-link-nav" href="./commandsGuide.html">Commands Guide</a></li>
+                                        <li class="header-nav-list"><a class="header-link-nav" href="./index.html">Home</a></li>
+                                        <li class="header-nav-list"><a class="header-link-nav" href="./docs/mixingPage/mixingGuide.html">Mixing Guide</a></li>
+                                        <li class="header-nav-list"><a class="header-link-nav" href="./docs/commandsPage/commandsGuide.html">Commands Guide</a></li>
                                     </ul>
                                 </nav>
                             </div>`;
