@@ -28,6 +28,10 @@
     font-family: 'DM_Sans', 'JetBrains_Mono', 'Montserrat';
 }
 
+body {
+    margin-bottom: 40px;
+}
+
 body::before {
     content: "";
     position: fixed;
@@ -47,7 +51,7 @@ body::before {
 /********** Header **********/
 
 .header {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -55,6 +59,9 @@ body::before {
     width: 100%;
     background-color: #dee2de;
     box-shadow: none;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-menu-view {
@@ -147,6 +154,55 @@ body::before {
     display: none;
 }
 
+/********** Main **********/
+
+.container-commands {
+    margin-top: 140px;
+    margin-bottom: 40px;
+    margin-right: 20%;
+    margin-left: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(222, 226, 222, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 18px;
+    border: 1px solid rgba(222, 226, 222, 0.3);
+}
+
+.section-commands {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.spliter-cmds {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.spliter-cmds h2 {
+    color: #68a9cf;
+    font-size: 2.2em;
+}
+
+.spliter-cmds p {
+    color: #dee2de;
+}
+
+.spliter-cmds p em {
+    color: #dee2de;
+    text-decoration: underline;
+}
+
 @media (max-width: 765px) {
     .header {
         position: relative;
@@ -206,7 +262,7 @@ body::before {
         height: 150px;
         width: 100%;
         background: #dee2de;
-        top: -80px;
+        top: 80px;
         z-index: -1;
     }
 
