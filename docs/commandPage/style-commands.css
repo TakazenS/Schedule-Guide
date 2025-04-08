@@ -271,6 +271,7 @@ body::before {
 }
 
 @media (max-width: 765px) {
+    
     .header {
         position: relative;
         width: 100%;
@@ -356,6 +357,34 @@ body::before {
     .txt-menu-mobile:hover {
         text-decoration: underline;
         transform: translateY(-4px);
+    }
+
+    .main-commands {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-commands {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        width: 78%;
+        margin-top: 35px;
+    }
+
+    .spliter-cmds h2 {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .spliter-cmds p {
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
 }
